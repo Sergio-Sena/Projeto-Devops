@@ -1,13 +1,3 @@
-### Criando um `README.md` Agradável e Interativo para o GitHub
-
-Vamos criar um `README.md` mais visualmente atraente, com ícones e seções interativas que facilitam a leitura e a execução dos comandos. Além disso, adicionaremos blocos de código com botões "Copiar" para facilitar a cópia dos comandos.
-
----
-
-### **Passo 1: Estrutura do `README.md`**
-
-#### Código de `README.md`:
-
 ```markdown
 # 🚀 Projeto Automoção Python e AWS
 
