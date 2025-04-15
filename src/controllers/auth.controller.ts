@@ -44,7 +44,7 @@ export const loginUser = async (req: Request, res: Response) => {
     }
 
     // Gerar token JWT
-    const token = generateToken(user._id);
+    const token = generateToken(user._id.toString());
 
     res.status(200).json({ token });
   } catch (error) {

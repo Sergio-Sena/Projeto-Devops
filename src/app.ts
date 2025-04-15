@@ -1,7 +1,8 @@
-require('dotenv').config();
 import express from 'express';
 import mongoose from 'mongoose';
 import authRoutes from './routes/auth.routes';
+
+require('dotenv').config();
 
 const app = express();
 
@@ -12,6 +13,10 @@ app.use(express.json());
 app.use('/api/auth', authRoutes);
 
 // Conectar ao MongoDB
+if (!process.env.MONGODB_URI) {
+  throw new Error('Variável de ambiente MONGODB_URI não definida');
+}
+
 mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
