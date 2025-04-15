@@ -1,7 +1,7 @@
 import bcrypt from 'bcryptjs';
 import { Request, Response } from 'express';
 import { User } from '../models/user.model';
-import { generateToken } from '../utils/jwt.util';
+import { generateToken } from '../utils/utils/jwt.util';
 
 export const registerUser = async (req: Request, res: Response) => {
   try {
